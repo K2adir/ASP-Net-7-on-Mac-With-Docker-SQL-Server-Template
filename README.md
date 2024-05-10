@@ -4,7 +4,7 @@ Aren't you tired of Microsoft's lack of proper documentation for Mac users and h
 
 I know I am. Here you can have my ready-to-go template.
 
-You only need 3 files from this repo.
+You only need 4 files from this repo.
 
 Data/DbContext.cs
 
@@ -15,6 +15,7 @@ builder.Services.AddDbContext<MovieDbContext>(options =>
 ```
 Models/Movie.cs 
 
+appsettings.json for the connection string setup.
 
 ## Project Setup
 
