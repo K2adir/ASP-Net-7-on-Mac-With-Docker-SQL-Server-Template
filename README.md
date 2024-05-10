@@ -1,3 +1,5 @@
+I just realized, I named the program as Net8, but it's Net 7. This is okay, follow the guide.
+
 # Hello Mac Users
 
 Aren't you tired of Microsoft's lack of proper documentation for Mac users and how horrible the DX (Developer Experience) is?
