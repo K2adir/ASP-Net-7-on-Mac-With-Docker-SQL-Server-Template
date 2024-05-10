@@ -1,32 +1,31 @@
-Hello Mac users,
-aren't you tired of Microsoft's lack of proper documentation for Mac users and how horrible the DX is?
+# Hello Mac Users
 
-I know I am. Here you can have my ready to go template.  
+Aren't you tired of Microsoft's lack of proper documentation for Mac users and how horrible the DX (Developer Experience) is?
 
+I know I am. Here you can have my ready-to-go template.
 
-The connection string is included in appsettings.json on purpose. 
+## Project Setup
 
-This is the docker Image I'm running on Docker
-https://hub.docker.com/_/microsoft-azure-sql-edge
+This template includes a predefined connection string in `appsettings.json` and utilizes Docker for database management.
 
-install it, run it. 
+### Docker Image
 
-mine is running at 
-Port 1433:1433 
+We use the Microsoft Azure SQL Edge Docker image, which can be found [here](https://hub.docker.com/_/microsoft-azure-sql-edge).
 
+**Installation and Running:**
 
-This is how you would need to write it on appsettigns.json. If your local host is something other than  "127.0.0.1" you will need to change it.
-On this example, I'm creating my connection with this string. 
-Server=tcp:127.0.0.1,1433;
+1. Install the Docker image from the provided link.
+2. Run it on your machine. My instance is running at `Port 1433:1433`.
 
+### Configuration Details
 
-If you need to change the name of the database created, edit this
-Database=NetDemo
+#### Connection String
 
+If your local host is something other than `127.0.0.1`, you will need to make adjustments. Here’s an example of how to write it in `appsettings.json`:
 
-The username and password from the connection string refer to the Docker image
-User=sa;Password=Admin@123
-
-
-This setup is not production-ready. You can use it to start a new project, test your ideas and what not. 
-When your project is ready to be deployed, you will need to adjust it accordingly.
+```json
+{
+  "ConnectionStrings": {
+    "MovieDbContext": "Server=tcp:127.0.0.1,1433;Database=NetDemo;MultipleActiveResultSets=true;User=sa;Password=Admin@123; TrustServerCertificate=true;"
+  }
+}
