@@ -16,6 +16,7 @@ We use the Microsoft Azure SQL Edge Docker image, which can be found [here](http
 
 1. Install the Docker image from the provided link.
 2. Run it on your machine. My instance is running at `Port 1433:1433`.
+3. My docker image's Username (User=sa) and Password (Password=Admin@123) are written in the connection string. You may want to change it to something else. 
 
 ### Configuration Details
 
@@ -29,3 +30,5 @@ If your local host is something other than `127.0.0.1`, you will need to make ad
     "MovieDbContext": "Server=tcp:127.0.0.1,1433;Database=NetDemo;MultipleActiveResultSets=true;User=sa;Password=Admin@123; TrustServerCertificate=true;"
   }
 }
+
+My file is included in the repo. 
