@@ -1,6 +1,7 @@
 Hello Mac users,
-aren't you tired of Microsoft's lack of proper documentation for mac users and how horrible the DX is?
-I'm so, I created this template. 
+aren't you tired of Microsoft's lack of proper documentation for Mac users and how horrible the DX is?
+
+I know I am. Here you can have my ready to go template.  
 
 
 The connection string is included in appsettings.json on purpose. 
