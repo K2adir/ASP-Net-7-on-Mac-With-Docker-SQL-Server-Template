@@ -64,7 +64,7 @@ Apply the latest migrations to update the database by running:
 dotnet ef database update
 ```
 
-Voala! (or something like that) check your database using Azure Data Studio, you can download it for free from Microsoft. [here](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall).
+Voala! (or something like that) check your database using Azure Data Studio,  [you can download it for free from Microsoft.](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall).
 
 For Azure Data Studio, use the following settings
 
