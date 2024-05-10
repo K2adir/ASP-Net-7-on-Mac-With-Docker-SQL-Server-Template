@@ -69,9 +69,13 @@ Voala! (or something like that) check your database using Azure Data Studio, you
 For Azure Data Studio, use the following settings
 
 Connection type: Microsoft sql server
+
 input type: parameters 
+
 server: localhost
+
 username: sa (username of your running docker instance)
+
 password: (docker password) 
 
 trust server certificate: True
