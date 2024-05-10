@@ -4,6 +4,18 @@ Aren't you tired of Microsoft's lack of proper documentation for Mac users and h
 
 I know I am. Here you can have my ready-to-go template.
 
+You only need 3 files from this repo.
+
+Data/DbContext.cs
+
+Program.cs, for this line
+```
+builder.Services.AddDbContext<MovieDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MovieDbContext")));
+```
+Models/Movie.cs 
+
+
 ## Project Setup
 
 This template includes a predefined connection string in `appsettings.json` and utilizes Docker for database management.
