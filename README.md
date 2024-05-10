@@ -14,14 +14,19 @@ install it, run it.
 mine is running at 
 Port 1433:1433 
 
-My connection string is set to 
+
+This is how you would need to write it on appsettigns.json. If your local host is something other than  "127.0.0.1" you will need to change it.
+On this example, I'm creating my connection with this string. 
 Server=tcp:127.0.0.1,1433;
+
 
 If you need to change the name of the database created, edit this
 Database=NetDemo
----
+
+
 The username and password from the connection string refer to the Docker image
 User=sa;Password=Admin@123
----
+
+
 This setup is not production-ready. You can use it to start a new project, test your ideas and what not. 
 When your project is ready to be deployed, you will need to adjust it accordingly.
