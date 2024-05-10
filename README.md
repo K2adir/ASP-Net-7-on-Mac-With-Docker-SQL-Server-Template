@@ -31,4 +31,49 @@ If your local host is something other than `127.0.0.1`, you will need to make ad
   }
 }
 
-My file is included in the repo. 
+My file is included in the repo.
+```
+
+# Project Setup Instructions
+
+## Initial Setup
+
+After cloning the repository, open your terminal and execute the following command to install the missing NuGet packages:
+
+```bash
+dotnet restore
+```
+
+If this step fails, review the Data/DbContext and Program.cs files for any errors related to missing packages.
+
+# Managing Database Migrations
+
+Once the NuGet packages are restored, you can proceed with setting up and managing your database migrations using Entity Framework:
+
+## Create a New Migration:
+
+To create a new migration, run the following command in your terminal. Feel free to change "YourMigrationName"
+
+```bash
+dotnet ef migrations add YourMigrationName
+```
+## Update the Database:
+
+Apply the latest migrations to update the database by running:
+```bash
+dotnet ef database update
+```
+
+Voala! (or something like that) check your database using Azure Data Studio, you can download it for free from Microsoft. [here](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall).
+
+For Azure Data Studio, use the following settings
+
+Connection type: Microsoft sql server
+input type: parameters 
+server: localhost
+username: sa (username of your running docker instance)
+password: (docker password) 
+
+trust server certificate: True
+
+and hit connect. 
